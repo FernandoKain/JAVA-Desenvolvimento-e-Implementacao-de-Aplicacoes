@@ -1,0 +1,52 @@
+package cap02_exercicios;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		/* Considere a seguinte informação a respeito do cálculo da aposentadoria. Para se aposentar 
+		 * por idade, as mulheres precisam ter atingido 60 anos de idade e os homens, 65. Já na 
+		 * aposentadoria por tempo de contribuição, o tempo mínimo exigido é de 30 anos para as 
+		 * mulheres e de 35 anos para os homens. Com base nessas informações, elabore um classe 
+		 * que receba a idade de uma pessoa, seu sexo e a quantidade de anos de contribuição.
+		 * A seguir, calcule quantos anos de contribuição faltam para a aposentadoria, ou então emita 
+		 * a mensagem:
+		 * 
+		 * "Você já tem direito à aposentadoria."
+		 */
+		
+		String aux;
+		int idade;
+		int sexo;
+		int anos_de_contribuicao;
+		int anos_para_aposentadoria;
+
+		aux = JOptionPane.showInputDialog("Digite a sua idade: ");
+		idade = Integer.parseInt(aux);
+		
+		aux = JOptionPane.showInputDialog("Digita o seu sexo. \n 1 - para masculino \n 2 - para feminino");
+		sexo = Integer.parseInt(aux);
+		
+		aux = JOptionPane.showInputDialog("Digite o número de anos de contribuição: ");
+		anos_de_contribuicao = Integer.parseInt(aux);
+		
+		if(sexo == 1) {
+			anos_para_aposentadoria = 65 - anos_de_contribuicao;
+			if(anos_para_aposentadoria <= 35) {
+				
+			}
+		}else if(sexo == 2) {
+			anos_para_aposentadoria = 60 - anos_de_contribuicao;
+		}
+		
+		
+				
+		
+		
+		
+		
+
+	}
+
+}
