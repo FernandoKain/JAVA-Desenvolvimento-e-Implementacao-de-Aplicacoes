@@ -21,6 +21,8 @@ public class Exercicio05 {
 		int sexo;
 		int anos_de_contribuicao;
 		int anos_para_aposentadoria;
+		int idade_homem_aposentar = 65;
+		int idade_mulher_aposentar = 60;
 
 		aux = JOptionPane.showInputDialog("Digite a sua idade: ");
 		idade = Integer.parseInt(aux);
@@ -32,12 +34,21 @@ public class Exercicio05 {
 		anos_de_contribuicao = Integer.parseInt(aux);
 		
 		if(sexo == 1) {
-			anos_para_aposentadoria = 65 - anos_de_contribuicao;
-			if(anos_para_aposentadoria <= 35) {
-				
+			anos_para_aposentadoria = idade_homem_aposentar - anos_de_contribuicao;
+			if(idade < 65 && anos_de_contribuicao < 35) {
+				anos_de_contribuicao = 35 - anos_de_contribuicao;
+				JOptionPane.showMessageDialog(null, "Você ainda precisa trabalhar: " + anos_de_contribuicao + " anos.");
+			}else if(idade >= 65 && anos_de_contribuicao >= 35){
+				JOptionPane.showMessageDialog(null, "Você já pode se aposentar!");
 			}
 		}else if(sexo == 2) {
-			anos_para_aposentadoria = 60 - anos_de_contribuicao;
+			anos_para_aposentadoria = idade_mulher_aposentar - anos_de_contribuicao;
+			if(idade < 60 && anos_de_contribuicao < 30) {
+				anos_de_contribuicao = 30 - anos_de_contribuicao;
+				JOptionPane.showMessageDialog(null, "Você ainda precisa trabalhar: " + anos_de_contribuicao + " anos.");
+			}else if(idade >= 60 && anos_de_contribuicao >= 30){
+				JOptionPane.showMessageDialog(null, "Você já pode se aposentar!");
+			}
 		}
 		
 		
