@@ -25,7 +25,11 @@ public class TryCatch {
 			JOptionPane.showMessageDialog(null, "Erro de conversão. \nDigite somente caracteres numéricos. \n" + e.toString(), "Erro", JOptionPane.ERROR_MESSAGE);
 		}catch (NullPointerException e) {
 			JOptionPane.showMessageDialog(null, "Tecla 'CANCEL' foi pressionada. \n" + e.toString(), "Cancelado pelo usuário! ", JOptionPane.ERROR_MESSAGE);
+		}finally {
+			JOptionPane.showMessageDialog(null, "Final da Execução.");
 		}
+		
+		System.exit(0);
 
 	}
 
