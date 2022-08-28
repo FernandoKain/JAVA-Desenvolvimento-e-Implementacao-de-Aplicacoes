@@ -15,6 +15,11 @@ public class ContadorWhile {
 			while(contador >= 0) {
 				System.out.println(contador);
 				contador--;
+				try {
+					Thread.sleep(1000);
+				}catch (InterruptedException e) {
+					e.toString();
+				}
 			}
 			System.out.println("Fim do contador regressivo.");
 		}catch (NumberFormatException e) {
