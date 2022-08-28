@@ -23,6 +23,8 @@ public class IfComElse {
 		}else {
 			JOptionPane.showMessageDialog(null, "Operação Cancelada!");
 		}
+		
+		System.exit(0);
 
 	}
 
