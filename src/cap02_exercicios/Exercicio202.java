@@ -3,7 +3,7 @@ package cap02_exercicios;
 import java.util.Scanner;
 import java.io.*;
 
-public class Exercicio02 {
+public class Exercicio202 {
 
 	public static void main(String[] args) {
 		/* Usando a classe Scanner para entrada de dados, faça uma classe que receba dois valores inteiros. 

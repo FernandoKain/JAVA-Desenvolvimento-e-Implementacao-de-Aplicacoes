@@ -2,7 +2,7 @@ package cap02_exercicios;
 
 import javax.swing.JOptionPane;
 
-public class Exercicio05 {
+public class Exercicio205 {
 
 	public static void main(String[] args) {
 		/* Considere a seguinte informação a respeito do cálculo da aposentadoria. Para se aposentar 

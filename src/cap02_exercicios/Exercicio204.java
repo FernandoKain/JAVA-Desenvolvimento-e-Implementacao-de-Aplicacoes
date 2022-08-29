@@ -2,7 +2,7 @@ package cap02_exercicios;
 
 import javax.swing.JOptionPane;
 
-public class Exercicio04 {
+public class Exercicio204 {
 
 	public static void main(String[] args) {
 		/* Usando a classe JOptionPane para entrada de dados, elabore uma classe que receba a nota 

@@ -2,7 +2,7 @@ package cap02_exercicios;
 
 import javax.swing.JOptionPane;
 
-public class Exercicio03 {
+public class Exercicio203 {
 
 	public static void main(String[] args) {
 		/* O imposto sobre a Transmissão de Bens Imóveis (ITBI) é aplicado sobre o valor de um imóvel a ser 
