@@ -14,7 +14,7 @@ public class IfComElseAninhado {
 				int mes = Integer.parseInt(aux);
 				if (mes == 1) {
 					aux = "Janeiro";
-				}else if(mes == 1){
+				}else if(mes == 2){
 					aux = "Fevereiro";
 				}else if(mes == 3){
 					aux = "Março";

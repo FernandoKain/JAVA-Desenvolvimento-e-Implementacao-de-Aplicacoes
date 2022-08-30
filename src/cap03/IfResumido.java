@@ -8,12 +8,14 @@ public class IfResumido {
 		// TODO Auto-generated method stub
 		
 		int a = 10, b = 15, maior;
+
 		
 		if(a > b) {
 			maior = a;
 		}else {
 			maior = b;
 		}
+		
 		
 		JOptionPane.showMessageDialog(null, "Usando um if comum. " + maior);
 

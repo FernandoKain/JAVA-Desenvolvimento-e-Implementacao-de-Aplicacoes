@@ -1,5 +1,7 @@
 package cap03_exercicios;
 
+import java.io.IOException;
+
 import javax.swing.JOptionPane;
 
 public class Exercicio301 {
@@ -14,12 +16,47 @@ public class Exercicio301 {
 		 * ilustra a execução do Exercício 3.1
 		 * 
 		 */
-		String nome_do_produto;
-		float valor;
-		
-		String aux = JOptionPane.showInputDialog("Insira o nome do produto: ");
-		System.out.println(aux);
 
+		String nome_do_produto;
+		float valor_do_produto;
+		float valor_do_produto_com_desconto;
+		int desconto;
+		String aux;
+		
+		aux = JOptionPane.showInputDialog("Insira o nome do produto: ");
+		nome_do_produto = aux;
+		
+		aux = JOptionPane.showInputDialog("Insira o valor do produto: ");
+		valor_do_produto = Float.parseFloat(aux);
+		
+
+				if (valor_do_produto >= 50 && valor_do_produto <= 200) {
+					desconto = 5;
+					valor_do_produto_com_desconto = valor_do_produto - (valor_do_produto * desconto / 100);
+					JOptionPane.showMessageDialog(null, "Nome do produto: " + nome_do_produto + "\nValor original do produto: " 
+							+ valor_do_produto + "\nValor do produto com desconto: " + valor_do_produto_com_desconto);
+					
+				}else if(valor_do_produto >= 200 && valor_do_produto < 500) {
+					desconto = 6;
+					valor_do_produto_com_desconto = - (valor_do_produto * desconto / 100);
+					JOptionPane.showMessageDialog(null, "Nome do produto: " + nome_do_produto + "\nValor original do produto: " 
+							+ valor_do_produto + "\nValor do produto com desconto: " + valor_do_produto_com_desconto);
+					
+				}else if(valor_do_produto >= 500 && valor_do_produto < 1000) {
+					desconto = 7;
+					valor_do_produto_com_desconto = valor_do_produto - (valor_do_produto * desconto / 100);
+					JOptionPane.showMessageDialog(null, "Nome do produto: " + nome_do_produto + "\nValor original do produto: " 
+							+ valor_do_produto + "\nValor do produto com desconto: " + valor_do_produto_com_desconto);
+					
+				}else if(valor_do_produto >= 1000) {
+					desconto = 8;
+					valor_do_produto_com_desconto = valor_do_produto - (valor_do_produto * desconto / 100);
+					JOptionPane.showMessageDialog(null, "Nome do produto: " + nome_do_produto + "\nValor original do produto: " 
+							+ valor_do_produto + "\nValor do produto com desconto: " + valor_do_produto_com_desconto);
+				}
+				
+
+		
 	}
 
 }
