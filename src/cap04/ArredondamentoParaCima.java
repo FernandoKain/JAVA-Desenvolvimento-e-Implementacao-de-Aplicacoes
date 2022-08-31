@@ -16,6 +16,7 @@ public class ArredondamentoParaCima {
 				+ "\nQuantidade Calculada: " + qtdOnibus
 				+ "\nQuantidade de Ônibus necessários: " + (int)Math.ceil(qtdOnibus));
 
+		System.exit(0);
 	}
 
 }
