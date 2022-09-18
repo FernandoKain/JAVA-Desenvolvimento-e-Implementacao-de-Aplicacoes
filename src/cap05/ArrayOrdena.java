@@ -40,6 +40,8 @@ public class ArrayOrdena {
 			System.out.print(nota + ", ");
 		}
 		
+		System.exit(0);
+		
 
 	}
 
