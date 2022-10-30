@@ -1,5 +1,8 @@
 package cap05_exercicios;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import javax.swing.JOptionPane;
 
 public class Exercicio501 {
@@ -20,6 +23,9 @@ public class Exercicio501 {
 			
 		}
 		
+		Arrays.sort(notas);
+		
+		
 		JOptionPane.showMessageDialog(null, "As notas obtidas foram: " 
 				+ "\n" + notas[0] 
 				+ "\n" + notas[1] 
@@ -27,7 +33,7 @@ public class Exercicio501 {
 				+ "\n" + notas[3] 
 				+ "\n" + notas[4]
 				+ "\n" + "A média das notas é: "
-				+ "\n" + (notas[0] + notas[1] + notas[2] + notas[3] + notas[4] / 5));
+				+ "\n" + (notas[0] + notas[1] + notas[2] + notas[3] + notas[4]) / 5);
 
 	}
 
